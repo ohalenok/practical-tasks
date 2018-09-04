@@ -1,0 +1,15 @@
+{
+  "name": "p3-test-atf",
+  "version": "1.0.0",
+  "description": "Test automation framework based on Protractor",
+  "main": "config.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "protractor": "^5.4.0"
+  },
+  "author": "Olena Halenok",
+  "license": "ISC"
+}
