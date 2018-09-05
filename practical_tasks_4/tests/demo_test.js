@@ -5,8 +5,10 @@ describe('login suite', function() {
       let loginPage = new LoginPage();
 
       await loginPage.open();
-      await loginPage.login("olena.halenok+scorer@gmail.com", "q79iFw(Ew");
-  
-      //expect(greeting.getText()).toEqual('Hello Julie!');
+      let productsPage = await loginPage.login("olena.halenok@gmail.com", ">#MKIg>2o");
+      
+      //await browser.sleep(5000);
+
+      expect(productsPage.header.isHeaderVisible()).toEqual(true);
     });
 });

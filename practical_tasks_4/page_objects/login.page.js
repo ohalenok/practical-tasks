@@ -1,3 +1,4 @@
+let ProductsPage = require("./products.page");
 
 let loginBtnLocator = ".login-panel .login-button";
 let emailInputLocator = "#email";
@@ -30,9 +31,11 @@ class LoginPage{
 
     async login(email, pass){
         await this.getLoginBtn().click();
-        await this.getEmailInput().click(email);
+        await this.getEmailInput().sendKeys(email);
         await this.getPassInput().sendKeys(pass);
         await this.getSignInBtn().click();
+
+        return new ProductsPage();
     }
 }
 
