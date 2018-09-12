@@ -1,10 +1,12 @@
 let ProductsPage = require('./products.page')
+let Button = require('../controls/button')
+let Input = require('../controls/input')
 
-let loginBtnLocator = '.login-panel .login-button';
-let emailInputLocator = '#email';
-let passInputLocator = '#userPassword';
-let signInBtnLocator = '.iframe-wrap .login-button';
-let loginErrorMessage = '.toast-error .toast-message';
+let loginBtnLocator = '.login-panel .login-button'
+let emailInputLocator = '#email'
+let passInputLocator = '#userPassword'
+let signInBtnLocator = '.iframe-wrap .login-button'
+let loginErrorMessage = '.toast-error .toast-message'
 let logoutDropdown = '.dropdown-toggle  .caret'
 let logoutButton = 'ul.dropdown-menu .dropdown-item'
 
@@ -12,19 +14,20 @@ class LoginPage {
   constructor () {}
 
   getLoginBtn () {
-    return element(by.css(loginBtnLocator))
+    return new Button(element(by.css(loginBtnLocator)), 'Login button')
   }
 
   getEmailInput () {
-    return element(by.css(emailInputLocator))
+    return new Input(element(by.css(emailInputLocator)), 'Email input')
   }
 
   getPassInput () {
-    return element(by.css(passInputLocator))
+    return new Input(element(by.css(passInputLocator)), 'Password input')
   }
 
   getSignInBtn () {
-    return element(by.css(signInBtnLocator))
+    return new Button(element(by.css(signInBtnLocator)), 'Sign in button')
+
   }
 
   getErrorMessage () {
@@ -46,10 +49,12 @@ class LoginPage {
   }
 
   async login (email, pass) {
-    await this.getLoginBtn().click()
-    await this.getEmailInput().sendKeys(email)
-    await this.getPassInput().sendKeys(pass)
-    await this.getSignInBtn().click()
+    await allure.createStep('Click login button', async() =>  await this.getLoginBtn().click())();
+    await allure.createStep('Enter email "${email}" and password "$(pass)"', async () => {
+      await this.getEmailInput().sendKeys(email);
+      await this.getPassInput().sendKeys(pass);
+    })();
+    await allure.createStep('Click sign in button', async () =>  await this.getSignInBtn().click())()
 
     return new ProductsPage()
   }
