@@ -1,0 +1,69 @@
+{
+  "uid" : "75041eae78c8b751",
+  "name" : "login error test",
+  "fullName" : "login suite.login error test",
+  "historyId" : "ee1e7c7a9f78bd3b39a6ec920c61fc73",
+  "time" : {
+    "start" : 1536605989776,
+    "stop" : 1536606003251,
+    "duration" : 13475
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "2e33576435d14dc5",
+      "name" : "Screenshot",
+      "source" : "2e33576435d14dc5.png",
+      "type" : "image/png",
+      "size" : 17266
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "login suite"
+  }, {
+    "name" : "testClass",
+    "value" : "login suite"
+  }, {
+    "name" : "testMethod",
+    "value" : "login error test"
+  }, {
+    "name" : "package",
+    "value" : "login suite"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "ed4d4bdaca394ca1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536604270375,
+        "stop" : 1536604283537,
+        "duration" : 13162
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "75041eae78c8b751.json",
+  "parameterValues" : [ ]
+}
