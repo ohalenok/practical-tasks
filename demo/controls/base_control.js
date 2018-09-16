@@ -1,14 +1,13 @@
 class BaseControl {
 
-    constructor(protractorElement, controlName) {
-        this.protractorElement = protractorElement;
-        this.controlName = controlName;
-    }
+  constructor (protractorElement, controlName) {
+    this.protractorElement = protractorElement
+    this.controlName = controlName
+  }
 
-    async click() {
-        await this.protractorElement.click();
-    }
-
+  async click () {
+    return this.protractorElement.click()
+  }
 }
 
-module.exports = BaseControl;
+module.exports = BaseControl

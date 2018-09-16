@@ -1,4 +1,4 @@
-let AllureReporter = require ('jasmine-allure-reporter');
+let AllureReporter = require('jasmine-allure-reporter');
 
 // An example configuration file
 exports.config = {
@@ -12,7 +12,7 @@ exports.config = {
     browserName: 'chrome',
     maxInstances: 1
   },
-  
+
   // restartBrowserBetweenTests: true,
 
   // Spec patterns are relative to the configuration file location passed
@@ -24,12 +24,13 @@ exports.config = {
     demo: [
       './tests/demo_test_1.js',
       './tests/demo_test_2.js',
-      //'./tests/demo_test_3.js',
+      './tests/demo_test_3.js',
+      //'./tests/demo_test_4.js',
     ]
   },
 
   framework: 'jasmine2',
-  
+
   // add reporting
   onPrepare: function () {
     let AllureReporter = require('jasmine-allure-reporter');

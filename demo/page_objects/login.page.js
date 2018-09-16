@@ -1,14 +1,14 @@
 let ProductsPage = require('./products.page')
 let Button = require('../controls/button')
 let Input = require('../controls/input')
+let Errors = require('../controls/errors')
 
 let loginBtnLocator = '.login-panel .login-button'
 let emailInputLocator = '#email'
 let passInputLocator = '#userPassword'
 let signInBtnLocator = '.iframe-wrap .login-button'
+//let signInBtnLocator = '.sign-in-padding .login-button'
 let loginErrorMessage = '.toast-error .toast-message'
-let logoutDropdown = '.dropdown-toggle  .caret'
-let logoutButton = 'ul.dropdown-menu .dropdown-item'
 
 class LoginPage {
   constructor () {}
@@ -26,20 +26,11 @@ class LoginPage {
   }
 
   getSignInBtn () {
-    return new Button(element(by.css(signInBtnLocator)), 'Sign in button')
-
+    return new Button(element(by.css(signInBtnLocator)), 'Sign in button')     
   }
 
   getErrorMessage () {
-    return element(by.css(loginErrorMessage))
-  }
-
-  getLogoutDropdown () {
-    return element(by.css(logoutDropdown))
-  }
-
-  getLogoutButton () {
-    return element(by.css(logoutButton))
+    return new Errors(element(by.css(loginErrorMessage)), 'Login Error message')
   }
 
   async open () {
@@ -49,7 +40,7 @@ class LoginPage {
   }
 
   async login (email, pass) {
-    await allure.createStep('Click login button', async() =>  await this.getLoginBtn().click())();
+    await allure.createStep('Click login button', async () =>  await this.getLoginBtn().click())();
     await allure.createStep('Enter email "${email}" and password "$(pass)"', async () => {
       await this.getEmailInput().sendKeys(email);
       await this.getPassInput().sendKeys(pass);
@@ -59,18 +50,17 @@ class LoginPage {
     return new ProductsPage()
   }
 
+  async signInBtnEnabled () {
+    await allure.createStep('sign in button is enabled', async () =>  await this.getSignInBtn().isEnabled())()
+
+    return this
+  }
+
   async loginError (email, pass) {
     await this.getLoginBtn().click()
     await this.getEmailInput().sendKeys(email)
     await this.getPassInput().sendKeys(pass)
     await this.getSignInBtn().click()
-
-    return this
-  }
-
-  async logout () {
-    await this.getLogoutDropdown().click()
-    await this.getLogoutButton().click()
 
     return this
   }

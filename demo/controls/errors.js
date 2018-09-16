@@ -1,13 +1,13 @@
 let BaseControl = require('./base_control')
 
-class Input extends BaseControl {
+class Errors extends BaseControl {
   constructor (protractorElement, controlName) {
     super (protractorElement, controlName)
   }
 
-  async sendKeys (text) {
-    return this.protractorElement.sendKeys(text)
+  async isDisplayed () {
+    return this.protractorElement.isDisplayed()
   }
 }
 
-module.exports = Input;
+module.exports = Errors

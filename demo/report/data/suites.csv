@@ -1,3 +1,4 @@
 "Status","Name","Duration in ms","Description"
-"passed","login suite.login error test","13475",""
-"passed","login suite.login pass test","5295",""
+"passed","login suite.login pass test","3691",""
+"passed","login suite.login email is requiered error test","3806",""
+"passed","login suite.login password is not correct error test","12726",""

@@ -1,0 +1,106 @@
+{
+  "uid" : "1cecf387a2a3426a",
+  "name" : "login email is requiered error test",
+  "fullName" : "login suite.login email is requiered error test",
+  "historyId" : "38ce2fc745b175fe160f9141edd618c4",
+  "time" : {
+    "start" : 1537137811376,
+    "stop" : 1537137815182,
+    "duration" : 3806
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Click login button",
+      "time" : {
+        "start" : 1537137814399,
+        "stop" : 1537137814525,
+        "duration" : 126
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter email \"${email}\" and password \"$(pass)\"",
+      "time" : {
+        "start" : 1537137814525,
+        "stop" : 1537137814746,
+        "duration" : 221
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click sign in button",
+      "time" : {
+        "start" : 1537137814746,
+        "stop" : 1537137814833,
+        "duration" : 87
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "933cb3a38c20da58",
+      "name" : "Screenshot",
+      "source" : "933cb3a38c20da58.png",
+      "type" : "image/png",
+      "size" : 17567
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 3,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "login suite"
+  }, {
+    "name" : "testClass",
+    "value" : "login suite"
+  }, {
+    "name" : "testMethod",
+    "value" : "login email is requiered error test"
+  }, {
+    "name" : "package",
+    "value" : "login suite"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1cecf387a2a3426a.json",
+  "parameterValues" : [ ]
+}

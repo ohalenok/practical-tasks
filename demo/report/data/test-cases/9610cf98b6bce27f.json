@@ -1,12 +1,12 @@
 {
-  "uid" : "b4d4899a32582ad0",
+  "uid" : "9610cf98b6bce27f",
   "name" : "login pass test",
   "fullName" : "login suite.login pass test",
   "historyId" : "c2b40cb485d13e0a0ca0e29a86476c46",
   "time" : {
-    "start" : 1536606003274,
-    "stop" : 1536606008569,
-    "duration" : 5295
+    "start" : 1537137815185,
+    "stop" : 1537137818876,
+    "duration" : 3691
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -18,9 +18,9 @@
     "steps" : [ {
       "name" : "Click login button",
       "time" : {
-        "start" : 1536606006785,
-        "stop" : 1536606006907,
-        "duration" : 122
+        "start" : 1537137817479,
+        "stop" : 1537137817572,
+        "duration" : 93
       },
       "status" : "passed",
       "steps" : [ ],
@@ -33,9 +33,9 @@
     }, {
       "name" : "Enter email \"${email}\" and password \"$(pass)\"",
       "time" : {
-        "start" : 1536606006907,
-        "stop" : 1536606007204,
-        "duration" : 297
+        "start" : 1537137817572,
+        "stop" : 1537137817842,
+        "duration" : 270
       },
       "status" : "passed",
       "steps" : [ ],
@@ -48,9 +48,9 @@
     }, {
       "name" : "Click sign in button",
       "time" : {
-        "start" : 1536606007204,
-        "stop" : 1536606007310,
-        "duration" : 106
+        "start" : 1537137817842,
+        "stop" : 1537137817934,
+        "duration" : 92
       },
       "status" : "passed",
       "steps" : [ ],
@@ -62,9 +62,9 @@
       "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "64eebf04454dbd81",
+      "uid" : "e299433d4c81bdfb",
       "name" : "Screenshot",
-      "source" : "64eebf04454dbd81.png",
+      "source" : "e299433d4c81bdfb.png",
       "type" : "image/png",
       "size" : 21003
     } ],
@@ -97,18 +97,10 @@
   "retry" : false,
   "extra" : {
     "severity" : "normal",
-    "retries" : [ {
-      "uid" : "54957f06ffbf6684",
-      "status" : "passed",
-      "time" : {
-        "start" : 1536604283546,
-        "stop" : 1536604288202,
-        "duration" : 4656
-      }
-    } ],
+    "retries" : [ ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "b4d4899a32582ad0.json",
+  "source" : "9610cf98b6bce27f.json",
   "parameterValues" : [ ]
 }

@@ -1,0 +1,106 @@
+{
+  "uid" : "cc2098dcb9f8e583",
+  "name" : "login password is not correct error test",
+  "fullName" : "login suite.login password is not correct error test",
+  "historyId" : "40233971fa7fa1d7045c587a3690af43",
+  "time" : {
+    "start" : 1537137798638,
+    "stop" : 1537137811364,
+    "duration" : 12726
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Click login button",
+      "time" : {
+        "start" : 1537137804864,
+        "stop" : 1537137805022,
+        "duration" : 158
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter email \"${email}\" and password \"$(pass)\"",
+      "time" : {
+        "start" : 1537137805022,
+        "stop" : 1537137805338,
+        "duration" : 316
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click sign in button",
+      "time" : {
+        "start" : 1537137805338,
+        "stop" : 1537137805439,
+        "duration" : 101
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "922d11ecddd999b1",
+      "name" : "Screenshot",
+      "source" : "922d11ecddd999b1.png",
+      "type" : "image/png",
+      "size" : 17266
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 3,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "login suite"
+  }, {
+    "name" : "testClass",
+    "value" : "login suite"
+  }, {
+    "name" : "testMethod",
+    "value" : "login password is not correct error test"
+  }, {
+    "name" : "package",
+    "value" : "login suite"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "cc2098dcb9f8e583.json",
+  "parameterValues" : [ ]
+}
